@@ -1,0 +1,271 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #1c1e53;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #191a81 !important;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo,
+footer .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo .a,
+footer .logo .a {
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav .logo img, 
+footer .logo img {
+    width: 80px;
+    height: 80px;
+}
+
+nav ul,
+footer .topo ul {
+    display: flex;
+    gap: 40px
+}
+
+nav button {
+    color: #1c1e53;
+    background-color: transparent;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid #1a2042ab;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #1a2042ab;
+    border-color: #1a2042ab;
+    color: #fff;
+}
+
+nav button#menuButton {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 7px;
+}
+
+.main {
+    background-color: #d6dcdd;
+    padding: 90px 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.main .left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.main .left h3 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.main .left p {
+    color: #1c1e53;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.main .right img {
+    width: 600px;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+.titulopalestra h3 {
+    font-size: 40px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.palestras {
+    padding: 10px 85px;
+}
+
+.palestras .conjunto-card {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.palestras .conjunto-card .card {
+    flex: 1 1 30%;
+    border: 2px solid #1a2042ab;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    min-width: 250px;
+}
+
+.palestras .conjunto-card .card h4 {
+    margin-bottom: 15px;
+}
+
+.palestras .conjunto-card .card:hover {
+    border-color: #3749aff8;
+}
+
+.palestras .palestrantes {
+    margin-top: 10px;
+}
+
+.imgevento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.imgevento img {
+    display: block;
+    max-width: 50%;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #d6dcdd;
+    padding: 85px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .topo,
+footer .informacoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .topo .contato {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+}
+
+footer .separador {
+    width: 100%;
+    height: 1px;
+    background-color: #282938;
+    margin: 30px 0 20px;
+}
+
+footer .informacoes p {
+    font-size: 12px;
+}
+
+footer .informacoes .links a {
+    font-size: 12px;
+    margin-left: 14px;
+}
+
+@media screen and (max-width: 992px) {
+
+    nav button {
+        display: none;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .imgevento img {
+        max-width: 500px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        justify-content: space-between;
+        padding: 0 42px;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav.open .logo {
+        display: none;
+    }
+
+    nav.open ul {
+        display: flex;
+    }
+
+    nav button#menuButton {
+        display: flex;
+    }
+
+    .imgevento img {
+        max-width: 500px;
+    }
+
+    footer {
+        padding: 85px 42px;
+    }    
+}
+
+
+
+
