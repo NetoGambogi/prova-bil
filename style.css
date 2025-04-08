@@ -27,6 +27,8 @@ li {
     list-style: none;
 }
 
+    /* configurações nav-bar e algumas do rodapé */
+
 nav {
     background-color: #fff;
     position: fixed;
@@ -91,6 +93,8 @@ nav button#menuButton {
     padding: 7px;
 }
 
+        /* conteúdo sobre o evento */
+
 .main {
     background-color: #d6dcdd;
     padding: 90px 85px;
@@ -123,6 +127,8 @@ nav button#menuButton {
     border-radius: 50px;
     margin-top: 50px;
 }
+
+        /* cards contendo informações das palestras */
 
 .titulopalestra h3 {
     font-size: 40px;
@@ -177,6 +183,8 @@ nav button#menuButton {
     border-radius: 20px;
 }
 
+        /* rodapé */
+
 footer {
     background-color: #d6dcdd;
     padding: 85px;
@@ -213,6 +221,8 @@ footer .informacoes .links a {
     font-size: 12px;
     margin-left: 14px;
 }
+
+        /* responsividade */
 
 @media screen and (max-width: 992px) {
 

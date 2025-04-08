@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evento ETech - 2026</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -102,6 +102,7 @@ for ($i = 1; $i <= 3; $i++) {
 echo '</div>';
 echo '</div>';
 ?>
+
     <div class="imgevento">
     <img src="img/imgevento.jpg">
     </div>
@@ -121,9 +122,9 @@ echo '</div>';
                 <li><a href="#palestras">Palestras</a></li>
             </ul>
             <div class="contato">
-                <a href=""><i class='bx bxl-facebook'></i></a>
-                <a href=""><i class='bx bxl-instagram'></i></a>
-                <a href=""><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
             </div>
         </div>
         <div class="separador"></div>
